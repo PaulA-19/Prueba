@@ -1,13 +1,16 @@
 #!/usr/bin/perl 
-$num = <STDIN>;
-$mayor = $num; ## Si fuera solo un numero, seria el mayor
+@numbers = ();
+$i = 0;
+
 while($num = <STDIN>){
   chomp ($num);
-  if($num > $mayor){
-    $mayor = $num;
-  }
+  $numbers[$i] = 1* $num;
+  $i++;
 }
 
-print "El numero mayor es $mayor \n";
+foreach $valor (@numbers){
+  print " $valor \n";
+}
+
 
 
